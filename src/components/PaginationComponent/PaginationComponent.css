@@ -1,0 +1,16 @@
+.pagination-button {
+    background: #7b8287;
+    border-radius: 10px;
+    color: #ffffff;
+    font-family: Arial;
+    font-size: 20px;
+    margin: 5px 7px;
+    padding: 8px 10px;
+    text-decoration: none;
+}
+  
+.pagination-button:hover {
+    background: #393c3d;
+    cursor: pointer;
+    text-decoration: none;
+}
