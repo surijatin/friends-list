@@ -1,6 +1,3 @@
-import star from './star.png';
-import starFill from './star-fill.png';
-import binIcon from './delete.png';
 import './RowComponent.css';
 
 function RowComponent(props) {
@@ -12,13 +9,13 @@ function RowComponent(props) {
                 <h6>is your friend</h6>
             </div>
             <img
-                src={friend.isFavourite ? starFill : star}
+                src={friend.isFavourite ? './star-fill.png' : './star.png'}
                 alt={"Favourite Icon"}
                 onClick={(e) => {
                     handleFavourite(e, friend.id);
                 }} />
             <img
-                src={binIcon}
+                src={'./delete.png'}
                 alt={"Bin Icon"}
                 onClick={(e) => {
                     handleDelete(e, friend.id);
