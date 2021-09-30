@@ -10,13 +10,13 @@ function RowComponent(props) {
             </div>
             <img
                 src={friend.isFavourite ? './star-fill.png' : './star.png'}
-                alt={"Favourite Icon"}
+                alt={"Favorite"}
                 onClick={(e) => {
                     handleFavourite(e, friend.id);
                 }} />
             <img
                 src={'./delete.png'}
-                alt={"Bin Icon"}
+                alt={"Bin"}
                 onClick={(e) => {
                     handleDelete(e, friend.id);
                 }} />
