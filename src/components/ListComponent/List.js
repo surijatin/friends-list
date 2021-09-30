@@ -19,16 +19,7 @@ function List() {
     const nameEntered = event.target.value;
     if (nameEntered.match(regex) || nameEntered === "") {
       setName(nameEntered);
-      const filteredList = friends.filter(item => {
-        let showResult = false;
-        const nameArr = item.name.split(' ');
-        nameArr.forEach((name) => {
-          if (name.toLowerCase().includes(nameEntered.toLowerCase())) {
-            showResult = true;
-          };
-        });
-        return showResult;
-      });
+      const filteredList = friends.filter(item => item.name.toLowerCase().includes(nameEntered.toLowerCase()));
       setDisplay(filteredList);
     }
   }
